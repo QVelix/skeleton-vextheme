@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DashboardService } from 'src/app/dashboard.service';
 
 @Component({
   selector: 'vex-dashboard',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  productList;
 
-  constructor() { }
+  constructor(private dashboardService: DashboardService) {
+    this.productList = this.dashboardService.getProductsList();
+   }
 
   ngOnInit(): void {
   }

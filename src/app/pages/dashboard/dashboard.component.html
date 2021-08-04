@@ -1,1 +1,19 @@
-<p>dashboard works!</p>
+<div class="my-12 container" 
+    fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="30px">
+
+    <div class="card p-6" 
+        fxFlex="calc(30%-30px)" fxLayout="column" 
+        fxLayoutAlign="start center" *ngFor="let class of productList | async">
+
+        <h2 class="headline my-2">{{class.name}}</h2>
+
+        <div class="body-1"><span class="body-2">2</span> Users</div>
+
+        <h3 class="display-2 font-bold my-6">19<span 
+            class="text-secondary headline align-top">$</span></h3>
+
+        <button class="rounded-full max-w-full w-200" color="primary" 
+        mat-raised-button type="button">PURCHASE</button>
+    </div>
+
+</div>

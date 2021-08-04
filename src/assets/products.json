@@ -2,91 +2,108 @@
     {
         "id": 1,
         "name": "Электронная отчётность",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "Удобный",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 2,
                 "name": "Комфортный",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 3,
                 "name": "Солидный",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 4,
                 "name": "Привычный-1С",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 5,
                 "name": "НП++ Онлайн",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 6,
                 "name": "НПР Универсальный",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 7,
                 "name": "Ваш налоговый представитель++",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 8,
                 "name": "Ваш налоговый представитель НПР",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 9,
                 "name": "Ваш бухгалтер",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 10,
                 "name": "Многопользовательское решение",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 11,
                 "name": "Удобный. Спецрежим",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 12,
                 "name": "Комфортный. Спецрежим",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 13,
                 "name": "Солидный. Спецрежим",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 14,
                 "name": "Удобный. Бюджет",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 15,
                 "name": "Комфортный. Бюджет",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 16,
                 "name": "Солидный. Бюджет",
+                "description": "",
                 "link": ""
             },
             {
                 "id": 17,
                 "name": "Привычный-1С. ИП",
+                "description": "",
                 "link": ""
             }
         ]
@@ -94,361 +111,432 @@
     {
         "id": 2,
         "name": "Электронные подписи",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "Электронные торги. Базовый",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 2,
                 "name": "Электронные торги. Базовый за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 3,
                 "name": "Электронные торги. Универсальный",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 4,
                 "name": "Электронные торги. Универсальный за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 5,
                 "name": "Электронные торги. Фабрикант",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 6,
                 "name": "Электронные торги. Фабрикант за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 7,
                 "name": "Электронные торги. B2B-Center",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 8,
                 "name": "Электронные торги. B2B-Center за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 9,
                 "name": "Национальное достояние",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 10,
                 "name": "Национальное достояние за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 11,
                 "name": "Биржа «СПбМТСБ»",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 12,
                 "name": "Ключ директора",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 13,
                 "name": "Ключ директора. Базовый",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 14,
                 "name": "Ключ для кассы",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 15,
                 "name": "Электронные госуслуги",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 16,
                 "name": "Ключ для кассы. Базовый",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 17,
                 "name": "ЕГАИС",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 18,
                 "name": "Профессионал",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 19,
                 "name": "Электронный ПТС",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 20,
                 "name": "Ключ для маркировки",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 21,
                 "name": "Ключ для маркировки 2.0",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 22,
                 "name": "Зелёный коридор (ФТС)",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 23,
                 "name": "Росреестр",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 24,
                 "name": "Рособрнадзор",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 25,
                 "name": "СКАЛА-ЕПГУ",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 26,
                 "name": "R2D2",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 27,
                 "name": "ЛесЕГАИС",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 28,
                 "name": "ГИИС ДМДК",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 29,
                 "name": "Ключ для отчетности",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 30,
                 "name": "Ключ для отчетности + КриптоПро CSP",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 31,
                 "name": "Ключ директора за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 32,
                 "name": "Ключ для кассы за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 33,
                 "name": "Ключ директора. Базовый за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 34,
                 "name": "Ключ для маркировки за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 35,
                 "name": "Ключ для маркировки 2.0 за час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 36,
                 "name": "Ключ для отчетности за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 37,
                 "name": "Ключ для отчетности + КриптоПро CSP за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 38,
                 "name": "R2D2 за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 39,
                 "name": "ЛесЕГАИС за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 40,
                 "name": "ГИИС ДМДК за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 41,
                 "name": "СКАЛА-ЕПГУ за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 42,
                 "name": "Зелёный коридор (ФТС) за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 43,
                 "name": "Росреестр за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 44,
                 "name": "Рособрнадзор за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 45,
                 "name": "Профессионал за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 46,
                 "name": "Электронный ПТС за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 47,
                 "name": "Электронные госуслуги за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 48,
                 "name": "Для корпоративных систем ЭДО",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 49,
                 "name": "Для корпоративных систем ЭДО за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 50,
                 "name": "Для корпоративных систем ЭДО + КриптоПро CSP",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 51,
                 "name": "Для корпоративных систем ЭДО + КриптоПро CSP за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 52,
                 "name": "Депозитарный",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 53,
                 "name": "Депозитарный за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 54,
                 "name": "Совершенный",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 55,
                 "name": "Совершенный за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 56,
                 "name": "КриптоViP",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 57,
                 "name": "КриптоViP за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 58,
                 "name": "Неквалифицированная ЭП",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 59,
                 "name": "Неквалифицированная ЭП за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 60,
                 "name": "Неквалифицированная ЭП + КриптоПро CSP",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 61,
                 "name": "Неквалифицированная ЭП + КриптоПро CSP за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 62,
                 "name": "Физическим лицам + КриптоПро CSP",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 63,
                 "name": "Физическим лицам + КриптоПро CSP за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 64,
                 "name": "Физическим лицам",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 65,
                 "name": "Физическим лицам за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 66,
                 "name": "Физическим лицам. Экспресс",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 67,
                 "name": "Физическим лицам. Экспресс за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 68,
                 "name": "Росреестр. Лайт",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 69,
                 "name": "Росреестр. Лайт за один час",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 70,
                 "name": "Росреестр. ФЛ",
+                "description": "",
                 "link": ""
             },
             {
-                "id": 1,
+                "id": 71,
                 "name": "Росреестр. ФЛ за один час",
+                "description": "",
                 "link": ""
             }
         ]
@@ -456,11 +544,12 @@
     {
         "id": 3,
         "name": "Электронный документооборот",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -468,11 +557,12 @@
     {
         "id": 4,
         "name": "ОФД: Передача чеков в ФНС",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -480,11 +570,12 @@
     {
         "id": 5,
         "name": "Маркировка товаров",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -492,11 +583,12 @@
     {
         "id": 6,
         "name": "Прослеживаемость товаров",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -504,11 +596,12 @@
     {
         "id": 7,
         "name": "Решения 1С",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -516,11 +609,12 @@
     {
         "id": 8,
         "name": "Онлайн-кассы и обслуживание",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -528,11 +622,12 @@
     {
         "id": 9,
         "name": "ЕГАИС: продажа алкоголя",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -540,11 +635,12 @@
     {
         "id": 10,
         "name": "Проверка контрагентов",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -552,11 +648,12 @@
     {
         "id": 11,
         "name": "Ветеринарые сертификаты",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -564,11 +661,12 @@
     {
         "id": 12,
         "name": "Мероприятия и обучение",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -576,11 +674,12 @@
     {
         "id": 13,
         "name": "База знаний",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -588,11 +687,12 @@
     {
         "id": 14,
         "name": "Картотека документов",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -600,11 +700,12 @@
     {
         "id": 15,
         "name": "Аналитика данных",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -612,11 +713,12 @@
     {
         "id": 16,
         "name": "Торговые центры",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -624,11 +726,12 @@
     {
         "id": 17,
         "name": "ЛесЕГАИС",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -636,11 +739,12 @@
     {
         "id": 18,
         "name": "Сверься",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]
@@ -648,11 +752,12 @@
     {
         "id": 19,
         "name": "Визор",
-        "services":
-        [
+        "description": "",
+        "services": [
             {
                 "id": 1,
                 "name": "",
+                "description": "",
                 "link": ""
             }
         ]

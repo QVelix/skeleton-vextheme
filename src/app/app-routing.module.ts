@@ -1,23 +1,38 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { QuicklinkModule, QuicklinkStrategy } from 'ngx-quicklink';
 import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
+  /*{
+    path: '',
+    component: DashboardComponent
+  },*/
   {
     path: '',
     component: CustomLayoutComponent,
-    children: []
+    children: [
+      {
+        path: 'dashboard',
+        redirectTo: '/',
+      },
+      {
+        path: '',
+        loadChildren: () => import('./pages/dashboard/dashboard.module').then(m=>m.DashboardModule)
+      }
+    ]
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    // preloadingStrategy: PreloadAllModules,
+    preloadingStrategy: QuicklinkStrategy,
     scrollPositionRestoration: 'enabled',
     relativeLinkResolution: 'corrected',
     anchorScrolling: 'enabled'
   })],
-  exports: [RouterModule]
+  exports: [RouterModule, QuicklinkModule]
 })
 export class AppRoutingModule {
 }

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { QuicklinkModule, QuicklinkStrategy } from 'ngx-quicklink';
 import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   /*{
@@ -20,6 +19,14 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./pages/dashboard/dashboard.module').then(m=>m.DashboardModule)
+      },
+      {
+        path: 'products',
+        redirectTo: 'products'
+      },
+      {
+        path: '',
+        loadChildren: () => import('./pages/products/products.module').then(m=>m.ProductsModule)
       }
     ]
   }

@@ -21,13 +21,9 @@ const routes: Routes = [
         loadChildren: () => import('./pages/dashboard/dashboard.module').then(m=>m.DashboardModule)
       },
       {
-        path: 'products',
-        redirectTo: 'products'
-      },
-      {
-        path: '',
+        path: 'products/:class.id',
         loadChildren: () => import('./pages/products/products.module').then(m=>m.ProductsModule)
-      }
+      },
     ]
   }
 ];

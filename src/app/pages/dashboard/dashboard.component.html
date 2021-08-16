@@ -1,10 +1,10 @@
 <div class="my-12 container" 
     fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="30px">
 
-    <div href="/" class="card p-6" 
+    <a class="card p-6" 
         fxFlex="calc(30%-30px)" fxLayout="column" 
         fxLayoutAlign="start center" *ngFor="let class of productList | async"
-        (click)="transition()">
+        [routerLink]="['/products', class.id]">
 
         <h2 class="headline my-2">{{class.name}}</h2>
 
@@ -12,6 +12,6 @@
 
         <!--<button class="rounded-full max-w-full w-200" color="primnary" 
         mat-raised-button type="button">PURCHASE</button>-->
-    </div>
+    </a>
 
 </div>

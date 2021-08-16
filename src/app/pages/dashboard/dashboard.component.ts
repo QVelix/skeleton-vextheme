@@ -9,14 +9,6 @@ import { DashboardService } from 'src/app/dashboard.service';
 export class DashboardComponent implements OnInit {
   productList;
 
-  transition()
-  {
-    //let link = this.productList.forEach(element => {
-      //if(element.id == id) return element.name;
-    //});
-    window.open("https://google.com", '_self');
-  }
-
   constructor(private dashboardService: DashboardService) {
     this.productList = this.dashboardService.getProductsList();
    }

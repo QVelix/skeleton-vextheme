@@ -5,8 +5,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './products.component';
 
-
-
 @NgModule({
   declarations: [ProductsComponent],
   imports: [

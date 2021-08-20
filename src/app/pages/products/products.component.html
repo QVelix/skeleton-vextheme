@@ -1,2 +1,10 @@
-<p>products works!</p>
-<p *ngFor="let class of products">{{class.name}}</p>
+<div class="my-12 container" fxLayout="row wrap" fxLayout.xs="column" 
+fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 
+fxLayoutGap="24px" style="margin-top:90px;">
+    <div *ngFor="let prod of products" class="card p-6" 
+    fxFlex="calc(25%-24px)" fxLayout="column" fxLayoutAlign="start center">
+        <h2 class="headline my-6">{{prod.name}}</h2>
+        <button class="rounded-half max-w-full w-200" color="primary"
+         mat-raised-button type="button">Купить</button>
+    </div>
+</div>

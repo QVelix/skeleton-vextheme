@@ -5,7 +5,9 @@
         fxFlex="calc(30%-30px)" fxLayout="column" 
         fxLayoutAlign="start center" *ngFor="let class of productList | async"
         [routerLink]="['/products', class.id]">
-
+        <div class="inline-block p-6 rounded-full text-primary mx-auto flex items-center justify-center bg-primary-light">
+            <img size="48px" src="../../../assets/img{{class.img_path}}.svg"/>
+        </div>
         <h2 class="headline my-2">{{class.name}}</h2>
 
         <div class="body-1">{{class.description}}</div>

@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from 'src/app/products.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'vex-products',
@@ -11,8 +12,12 @@ export class ProductsComponent implements OnInit {
   classID;
   classList;
   products;
+  
+  goBack(){
+    this.location.back();
+  }
 
-  constructor(private resolver: ComponentFactoryResolver ,private route: ActivatedRoute, private productService: ProductsService) {
+  constructor(private resolver: ComponentFactoryResolver ,private route: ActivatedRoute, private productService: ProductsService, private location: Location) {
     this.route.paramMap.subscribe(params=>{
       this.classID = params.get('class.id');
     });

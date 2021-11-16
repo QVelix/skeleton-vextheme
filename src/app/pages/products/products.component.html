@@ -2,16 +2,44 @@
     <a (click)="goBack()">
         <img style="cursor: pointer;" src="../../../assets/img/arrow-back.png"/>
     </a>
+    <div *ngIf="classID == 1">
+        <vex-selection [products]="products"></vex-selection>
+    </div>
 </div>
-<div class="my-12 container" fxLayout="row wrap" fxLayout.xs="column" 
+
+<div class="my-12" fxLayout="row wrap" fxLayout.xs="column" 
 fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 
-fxLayoutGap="24px" style="margin-top:90px;">
+fxLayoutGap="10px" style="margin-top:90px;" ng-controller="ExampleController">
     <div *ngFor="let prod of products" class="card p-6" 
-    fxFlex="calc(25%-24px)" fxLayout="column" fxLayoutAlign="start center">
-    <h2 class="headline my-6">{{prod.name}}</h2>
-    <!--<div class="body-1"><span class="body-2">{{prod.description}}</span> Users</div>-->
-    <h3 class="display-2 font-bold my-6">{{prod.price}}<span class="text-secondary headline align-top">₽</span></h3>
-        <button class="rounded-half max-w-full w-200" color="primary"
-         mat-raised-button type="button">Подключится</button>
+    fxFlex="calc(20%-10px)" fxLayout="column" fxLayoutAlign="start center">
+        <h2 class="headline my-6">{{prod.name}}</h2>
+        <div *ngIf="classID==1; else elseId">
+        <div id="description" *ngIf="isArray(prod.description)&&prod.description.show!=false; else elseBlock">
+            <div class="body-1" *ngFor="let desc of prod.description">
+                <span class="body-2">{{desc.name}}</span><br/>{{desc.services}}
+            </div>
+            <h3 *ngIf="isArray(prod.advantages)" style="text-decoration: underline; cursor:pointer;"(click)="showSome(prod.description)">Подробнее</h3>
+        </div>
+        <ng-template #elseBlock>
+            <div id="description" *ngIf="isArray(prod.advantages)&&prod.description.show!=true;">
+                <div class="body-1" *ngFor="let adv of prod.advantages">
+                    <span class="body-2">{{adv}}</span><br/>
+                </div>
+                <h3 style="text-decoration: underline; cursor:pointer;" (click)="showSome(prod.description)">Назад</h3>
+            </div>
+        </ng-template>
+        </div>
+        <ng-template #elseId>
+            <div id="description">
+                <div class="body-1">
+                    <span class="body-2">{{prod.description}}</span><br/>
+                </div>
+            </div>
+        </ng-template>
+        <h3 class="price display-2 font-bold my-6">{{prod.price}}
+            <span class="text-secondary headline align-top">₽</span>
+        </h3>
+        <button click="Purchase(prod.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+        <vex-purchase *ngIf="showPurchase==true" [link]="link"></vex-purchase>
     </div>
 </div>

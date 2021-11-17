@@ -1,0 +1,17 @@
+<div class="arrow-back">
+    <a (click)="goBack()">
+        <img style="cursor: pointer;" src="../../../assets/img/arrow-back.png"/>
+    </a>
+</div>
+<div class="my-12" fxLayout="row wrap" fxLayout.xs="column" 
+fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 
+fxLayoutGap="10px" style="margin-top:90px;" ng-controller="ExampleController">
+    <div *ngFor="let prod of productsList" class="card p-6" 
+    fxFlex="calc(20%-10px)" fxLayout="column" fxLayoutAlign="start center">
+        <h2 class="headline my-6">{{prod.Text}}</h2>
+        <h3 class="price display-2 font-bold my-6">{{prod.Price}}
+            <span class="text-secondary headline align-top">₽</span>
+        </h3>
+        <button class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+    </div>
+</div>

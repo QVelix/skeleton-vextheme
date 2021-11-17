@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { QuicklinkStrategy } from 'ngx-quicklink';
+import { QuicklinkModule, QuicklinkStrategy } from 'ngx-quicklink';
 import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
 
 const routes: Routes = [
@@ -15,6 +15,10 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: ()=>import('./dashboard/dashboard.module').then(m=>m.DashboardModule)
+      },
+      {
+        path: 'products/:class.link',
+        loadChildren: ()=>import('./products/products.module').then(m=>m.ProductsModule)
       }
     ]
   }
@@ -22,11 +26,12 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: QuicklinkStrategy,
     scrollPositionRestoration: 'enabled',
     relativeLinkResolution: 'corrected',
     anchorScrolling: 'enabled'
   })],
-  exports: [RouterModule]
+  exports: [RouterModule, QuicklinkModule]
 })
 export class AppRoutingModule {
 }

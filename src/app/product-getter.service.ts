@@ -9,7 +9,7 @@ import { Products } from './Classes/products';
 
 export class ProductGetterService {
   getElectronicSignatures(){
-    this.http.get<ESignature>('./assets/Москва/electronic-signatures.json');
+    return this.http.get<ESignature>("./assets/Москва/electronic-signatures.json");
   }
   constructor(private http:HttpClient) { }
 }

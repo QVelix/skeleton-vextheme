@@ -1,14 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Products } from './products';
+import { ESignature } from './Classes/electronic_signatures';
+import { Products } from './Classes/products';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class ProductGetterService {
-  getProductsList(){
-    return this.http.get<Products[]>('/assets/products.json');
+  getElectronicSignatures(){
+    this.http.get<ESignature>('./assets/Москва/electronic-signatures.json');
   }
   constructor(private http:HttpClient) { }
 }

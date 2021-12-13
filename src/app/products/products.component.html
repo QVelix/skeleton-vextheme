@@ -3,9 +3,16 @@
         <img style="cursor: pointer;" src="../../../assets/img/arrow-back.png"/>
     </a>
 </div>
-<div *ngIf="servicesType=='Отчётность'; else elseBlock">
-    <!---->
-</div>
+<ng-template *ngIf="servicesType=='Отчётность'; else elseBlock">
+    <div class="my-12" fxLayout="row wrap" fxLayout.xs="column" 
+    fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 
+    fxLayoutGap="10px" style="margin-top:90px;" ng-controller="ExampleController">
+        <div *ngFor="let prod of productsList" class="card p-6" 
+        fxFlex="calc(20%-10px)" fxLayout="column" fxLayoutAlign="start center">
+            <h2 class="headline my-6">{{prod.name}}</h2>
+        </div>
+    </div>
+</ng-template>
 <ng-template #elseBlock>
     <div class="my-12" fxLayout="row wrap" fxLayout.xs="column" 
     fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 

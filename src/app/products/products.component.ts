@@ -23,17 +23,21 @@ export class ProductsComponent implements OnInit {
       let service = params.get('class.link');
       if(service=='accounting'){
         this.servicesType='Отчётность';
+        productGetter.getAccouting().subscribe(
+          (data) => {
+            this.productsList = data;
+          }
+        );
+        console.log(this.productsList);
       }
       else if(service=='electronic_signatures'){
         this.servicesType="Электронная отчётность";
         productGetter.getElectronicSignatures().subscribe(
           (data) => {
             this.productsList = data;
-            this.productsList.forEach(element => {
-              console.log(element);
-            });
           }
         );
+        console.log(this.productsList);
       }
     });
    }

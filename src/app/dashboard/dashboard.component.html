@@ -1,11 +1,11 @@
 <div class="my-12 container" 
     fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="30px">
     <a class="card p-6" 
-        fxFlex="calc(30%-30px)" fxLayout="column" 
+        fxFlex fxLayout="column" 
         fxLayoutAlign="start center" *ngFor="let class of classList"
         [routerLink]="['/products', class.link]">
         <div class="inline-block p-6 rounded-full text-primary mx-auto flex items-center justify-center bg-primary-light">
-            <img size="48px" src="../../assets/{{class.img_path}}"/>
+            <img size="48px" src="../../assets{{class.img_path}}"/>
         </div>
         <h2 class="headline my-2">{{class.name}}</h2>
     </a>

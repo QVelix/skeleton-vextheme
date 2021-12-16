@@ -1,8 +1,6 @@
 export class Products {
-    Href: string;
-    Text: string;
-    Price: number;
-    Group: string;
-    BussinesType: string;
-    TariffPeriod: string;
+    'id':string;
+    'prices':[];
+    'name':string;
+    'links':[];
 }

@@ -19,6 +19,9 @@ export class ProductsComponent implements OnInit {
   goBack(){
     this.location.back();
   }
+  openLink(link){
+    window.open(link);
+  }
 
   constructor(private http: HttpClient,private resolver: ComponentFactoryResolver, private route: ActivatedRoute, private productGetter: ProductGetterService, private location: Location) {
     this.route.paramMap.subscribe(params=>{

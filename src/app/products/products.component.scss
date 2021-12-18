@@ -15,21 +15,44 @@
     margin: 9em;
 }
 .card{
-    height: 600px;
+    height: 300px;
     width: 300px;
     margin-bottom: 30px;
     text-align: center;
     position: relative;
     padding: 1rem;
 }
+input{
+    display: none;
+}
+label{
+    border-radius: 2px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: cornsilk;
+}
+label input:checked{
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: rgb(252, 215, 70);
+}
+.choiseCard{
+    border-radius: 2px;
+    width: 75%;
+    height: 8%;
+    background-color:rgb(227, 225, 250);
+}
+// .choise{
+    
+// }
 .headline{
     margin-top: -5px;
 }
 .display-2{
     position: absolute;
-    margin: 450px 0 0;
+    margin: 165px 0 0;
 }
 button{
     position: absolute;
-    margin: 510px 0 0;
+    margin: 230px 0 0;
 }

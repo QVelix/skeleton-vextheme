@@ -5,45 +5,42 @@
 </div>
 <div [ngSwitch]="servicesType">
     <ng-template ngSwitchCase="Отчётность">
-        <div class="my-12" fxLayout="row wrap" fxLayout.xs="column" 
-        fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 
+        <div class="my-12 container" fxLayout="row wrap" fxLayout.sm="column" 
+        fxLayoutAlign="start stretch" fxLayoutAlign.sm="start stretch" fxLayout.xs="column" fxLayoutAlign.xs="start stretch"
         fxLayoutGap="15px" style="margin-top:90px;" ng-controller="ExampleController">
             <div *ngFor="let prod of productsList" class="card p-6" 
             fxFlex="calc(25%-15px)" fxLayout="column" fxLayoutAlign="start center">
-                <h2 class="headline my-6">{{prod.name}}</h2>
-                <p *ngIf="prod.files!=null" (click)="openLink(prod.files)">Подробнее о услуге</p>
-                <h3 class="price display-2 font-bold my-6">{{prod.prices.price}}
-                    <span class="text-secondary headline align-top">₽</span>
-                </h3>
-                <button (click)="openLink(prod.links.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+                <h2 class="headline my-6" style="margin-top: 0;">{{prod.name}}</h2>
+                <p class="description" *ngIf="prod.files!=null" (click)="openLink(prod.files)" style="color: blue; text-decoration: underline; cursor: pointer;">Подробнее о услуге</p>
+                <div fxLayoutAlign="end center" fxLayout="column" style="width: 100%; height: 100%;">
+                    <hr style="border-top: 5px dotted black; width: 90%; height: 1px; margin-top: 1.5rem;">
+                    <h3 class="price display-2 font-bold my-6">{{prod.prices.price}}<span class="text-secondary headline align-top">₽</span>
+                    </h3>
+                    <button (click)="openLink(prod.links.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+                </div>
             </div>
         </div>
     </ng-template>
     <ng-template ngSwitchCase="Электронная подпись">
-        <div class="my-12" fxLayout="row wrap" fxLayout.xs="column" 
-        fxLayoutAlign="start start" fxLayoutAlign.xs="start stretch" 
+        <div class="my-12 container" fxLayout="row wrap" fxLayout.sm="column" 
+        fxLayoutAlign="start stretch" fxLayoutAlign.sm="start stretch" fxLayout.xs="column" fxLayoutAlign.xs="start stretch"
         fxLayoutGap="15px" style="margin-top:90px;" ng-controller="ExampleController">
             <div *ngFor="let prod of productsList" class="card p-6" 
             fxFlex="calc(25%-15px)" fxLayout="column" fxLayoutAlign="start center">
-                <h2 class="headline my-6">{{prod.name}}</h2>
-                <p (click)="openLink(prod.description)">Подробнее о услуге</p>
-                <div class="choiseCard">
-                    <label><input type="radio" checked name="price_{{prod.name}}" (click)="prod.choisedPrice = prod.price"/>Цена за сутки</label>
-                    <label><input type="radio" (click)="prod.choisedPrice = prod.fast_price" name="price_{{prod.name}}"/>Цена за час</label>
-                        <!-- <input type="radio" id="per_day" name="price"/>
-                        <label for="per_day">Цена за сутки</label>
-                        <input type="radio" id="per_hour" name="price"/>
-                        <label for="per_hour">Цена за час</label> -->
-                </div>
-                <h3 class="price display-2 font-bold my-6" *ngIf="prod.choisedPrice==null; else choisedPrice">{{prod.price}}
-                    <span class="text-secondary headline align-top">₽</span>
-                </h3>
-                <ng-template #choisedPrice>
-                    <h3 class="price display-2 font-bold my-6">{{prod.choisedPrice}}
-                        <span class="text-secondary headline align-top">₽</span>
+                <h2 class="headline my-6" style="margin-top: 0;">{{prod.name}}</h2>
+                <p class="description">{{prod.description}}</p>
+                <div fxLayoutAlign="end center" fxLayout="column" style="width:100%; height:100%;">
+                    <hr class="my-3" style="border-top: 5px dotted black; width: 90%; height: 1px;">
+                    <h4 class="font-bold">Стандартный заказ</h4>
+                    <h3 class="price display-2 font-bold">{{prod.price}}<span class="text-secondary headline align-top">₽</span>
                     </h3>
-                </ng-template>
-                <button (click)="openLink(prod.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+                    <hr class="my-3" style="border-top: 5px dotted black; width: 90%; height: 1px;">
+                    <h4 class="font-bold">Срочный заказ</h4>
+                    <h3 class="price display-2 font-bold">{{prod.fast_price}}<span class="text-secondary headline align-top">₽</span>
+                    </h3>
+                    <hr class="my-2">
+                    <button (click)="openLink(prod.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+                </div>
             </div>
         </div>
     </ng-template>

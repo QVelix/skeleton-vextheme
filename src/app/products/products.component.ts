@@ -2,9 +2,7 @@ import { Location } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { map, switchMap } from 'rxjs/operators';
-import { ESignature } from '../Classes/electronic_signatures';
-import { ProductGetterService } from '../product-getter.service';
+import { ProductGetterService } from '../Services/product-getter.service';
 
 @Component({
   selector: 'vex-products',

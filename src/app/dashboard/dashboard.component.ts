@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ClassesGetterService } from '../classes-getter.service';
+import { ClassesGetterService } from '../Services/classes-getter.service';
 
 @Component({
   selector: 'vex-dashboard',

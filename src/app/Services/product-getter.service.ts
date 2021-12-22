@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { mergeMap, switchMap } from 'rxjs/operators';
-import { Accounting } from './Classes/accounting';
-import { ESignature } from './Classes/electronic_signatures';
-import { Products } from './Classes/products';
+import { Accounting } from '../Classes/accounting';
+import { ESignature } from '../Classes/electronic_signatures';
+import { Products } from '../Classes/products';
 
 @Injectable({
   providedIn: 'root'

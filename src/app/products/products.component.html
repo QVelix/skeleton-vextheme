@@ -13,8 +13,8 @@
                 <h2 class="headline my-6" style="margin-top: 0;">{{prod.name}}</h2>
                 <p class="description" *ngIf="prod.files!=null" (click)="openLink(prod.files)" style="color: blue; text-decoration: underline; cursor: pointer;">Подробнее о услуге</p>
                 <div fxLayoutAlign="end center" fxLayout="column" style="width: 100%; height: 100%;">
-                    <hr style="border-top: 5px dotted black; width: 90%; height: 1px; margin-top: 1.5rem;">
-                    <h3 class="price display-2 font-bold my-6">{{prod.prices.price}}<span class="text-secondary headline align-top">₽</span>
+                    <hr style="border-top: 2px dashed rgb(128, 128, 128); width: 90%; height: 1px; margin-top: 1.5rem;">
+                    <h3 class="price display-2 font-bold my-6">{{prod.prices.price}}<span class="text-secondary headline align-top">₽</span><span class="help text-secondary headline align-top" title="Конечная цена будет выставленна в чеке">?</span>
                     </h3>
                     <button (click)="openLink(prod.links.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
                 </div>
@@ -30,13 +30,15 @@
                 <h2 class="headline my-6" style="margin-top: 0;">{{prod.name}}</h2>
                 <p class="description">{{prod.description}}</p>
                 <div fxLayoutAlign="end center" fxLayout="column" style="width:100%; height:100%;">
-                    <hr class="my-3" style="border-top: 5px dotted black; width: 90%; height: 1px;">
+                    <hr class="my-3" style="border-top: 2px dashed rgb(128, 128, 128); width: 90%; height: 1px;">
                     <h4 class="font-bold">Стандартный заказ</h4>
-                    <h3 class="price display-2 font-bold">{{prod.price}}<span class="text-secondary headline align-top">₽</span>
+                    <h3 class="price display-2 font-bold">{{prod.price}}<span class="text-secondary headline align-top">₽</span><span class="help text-secondary headline align-top" title="Конечная цена будет выставленна в чеке">?</span>
                     </h3>
-                    <hr class="my-3" style="border-top: 5px dotted black; width: 90%; height: 1px;">
+                    <hr class="my-2"/>
+                    <button (click)="openLink(prod.link_fast)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>
+                    <hr class="my-3" style="border-top: 2px dashed rgb(128, 128, 128); width: 90%; height: 1px;">
                     <h4 class="font-bold">Срочный заказ</h4>
-                    <h3 class="price display-2 font-bold">{{prod.fast_price}}<span class="text-secondary headline align-top">₽</span>
+                    <h3 class="price display-2 font-bold">{{prod.fast_price}}<span class="text-secondary headline align-top">₽</span><span class="help text-secondary headline align-top" title="Конечная цена будет выставленна в чеке">?</span>
                     </h3>
                     <hr class="my-2">
                     <button (click)="openLink(prod.link)" class="rounded-half max-w-full w-200" color="primary" mat-raised-button type="button">Подключится</button>

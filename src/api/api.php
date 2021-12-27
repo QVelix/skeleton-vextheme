@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['json'])){
         $newJson;
-        $json = json_decode($_POST['json'], JSON_OBJECT_AS_ARRAY);
+        $json = json_decode($_POST['json'], true);
         $i=0;
         foreach($json as $k=>$element){
             if(is_array($element["links"])&&!empty($element["links"])){
@@ -14,6 +14,6 @@
             }
         }
         echo json_encode($newJson);
-        return json_encode($newJson);
+        //return json_encode($newJson);
     }
 ?>

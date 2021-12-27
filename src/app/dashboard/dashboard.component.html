@@ -5,7 +5,7 @@
         fxLayoutAlign="start center" *ngFor="let class of classList"
         [routerLink]="['/products', class.link]">
         <div class="inline-block p-6 rounded-full text-primary mx-auto flex items-center justify-center bg-primary-light">
-            <img size="48px" src="../../assets{{class.img_path}}"/>
+            <img size="48px" src="/apps/generator/assets{{class.img_path}}"/>
         </div>
         <h2 class="headline my-2">{{class.name}}</h2>
     </a>

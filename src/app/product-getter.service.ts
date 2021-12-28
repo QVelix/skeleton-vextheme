@@ -12,16 +12,16 @@ import { Products } from './Classes/products';
 
 export class ProductGetterService {
   getElectronicSignatures(){
-    return this.http.get<ESignature>('/apps/generator/assets/cities/altayskiy_kray/electronic_signatures.json');
+    return this.http.get<ESignature>('/apps/taxcom/assets/cities/altayskiy_kray/electronic_signatures.json');
   }
   getAccouting():Observable<any>{
-    return this.http.get('/apps/generator/assets/cities/altayskiy_kray/accounting.json').pipe(
+    return this.http.get('/apps/taxcom/assets/cities/altayskiy_kray/accounting.json').pipe(
       switchMap(json=>{
         console.log(json);
         let formData: FormData = new FormData;
         formData.append('json', JSON.stringify(json));
         // return this.http.post('http://api/api.php', formData).pipe(switchMap(data=>{console.log(JSON.stringify(data));return s = data;}));
-        return this.http.post('/apps/generator/api/api.php', formData);
+        return this.http.post('/apps/taxcom/api/api.php', formData);
       })
     );
   }

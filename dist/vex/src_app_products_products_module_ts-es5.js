@@ -60,19 +60,19 @@
         _createClass(_ProductGetterService, [{
           key: "getElectronicSignatures",
           value: function getElectronicSignatures() {
-            return this.http.get('/apps/generator/assets/cities/altayskiy_kray/electronic_signatures.json');
+            return this.http.get('/apps/taxcom/assets/cities/altayskiy_kray/electronic_signatures.json');
           }
         }, {
           key: "getAccouting",
           value: function getAccouting() {
             var _this = this;
 
-            return this.http.get('/apps/generator/assets/cities/altayskiy_kray/accounting.json').pipe((0, rxjs_operators__WEBPACK_IMPORTED_MODULE_0__.switchMap)(function (json) {
+            return this.http.get('/apps/taxcom/assets/cities/altayskiy_kray/accounting.json').pipe((0, rxjs_operators__WEBPACK_IMPORTED_MODULE_0__.switchMap)(function (json) {
               console.log(json);
               var formData = new FormData();
               formData.append('json', JSON.stringify(json)); // return this.http.post('http://api/api.php', formData).pipe(switchMap(data=>{console.log(JSON.stringify(data));return s = data;}));
 
-              return _this.http.post('/apps/generator/api/api.php', formData);
+              return _this.http.post('/apps/taxcom/api/api.php', formData);
             }));
           }
         }]);
@@ -562,7 +562,7 @@
         selectors: [["vex-products"]],
         decls: 6,
         vars: 1,
-        consts: [[1, "arrow-back"], [3, "click"], ["src", "/apps/generator/assets/images/arrow-back.png", 2, "cursor", "pointer"], [3, "ngSwitch"], ["ngSwitchCase", "\u041E\u0442\u0447\u0451\u0442\u043D\u043E\u0441\u0442\u044C"], ["ngSwitchCase", "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0434\u043F\u0438\u0441\u044C"], ["fxLayout", "row wrap", "fxLayout.sm", "column", "fxLayoutAlign", "start stretch", "fxLayoutAlign.sm", "start stretch", "fxLayout.xs", "column", "fxLayoutAlign.xs", "start stretch", "fxLayoutGap", "15px", "ng-controller", "ExampleController", 1, "my-12", "container", 2, "margin-top", "90px"], ["class", "card p-6", "fxFlex", "calc(25%-15px)", "fxLayout", "column", "fxLayoutAlign", "start center", 4, "ngFor", "ngForOf"], ["fxFlex", "calc(25%-15px)", "fxLayout", "column", "fxLayoutAlign", "start center", 1, "card", "p-6"], [1, "headline", "my-6", 2, "margin-top", "0"], ["class", "description", "style", "color: blue; text-decoration: underline; cursor: pointer;", 3, "click", 4, "ngIf"], ["fxLayoutAlign", "end center", "fxLayout", "column", 2, "width", "100%", "height", "100%"], [2, "border-top", "2px dashed rgb(128, 128, 128)", "width", "90%", "height", "1px", "margin-top", "1.5rem"], [1, "price", "display-2", "font-bold", "my-6"], [1, "text-secondary", "headline", "align-top"], ["title", "\u041A\u043E\u043D\u0435\u0447\u043D\u0430\u044F \u0446\u0435\u043D\u0430 \u0431\u0443\u0434\u0435\u0442 \u0432\u044B\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u043D\u0430 \u0432 \u0447\u0435\u043A\u0435", 1, "help", "text-secondary", "headline", "align-top"], ["color", "primary", "mat-raised-button", "", "type", "button", 1, "rounded-half", "max-w-full", "w-200", 3, "click"], [1, "description", 2, "color", "blue", "text-decoration", "underline", "cursor", "pointer", 3, "click"], [1, "description"], [1, "my-3", 2, "border-top", "2px dashed rgb(128, 128, 128)", "width", "90%", "height", "1px"], [1, "font-bold"], [1, "price", "display-2", "font-bold"], [1, "my-2"]],
+        consts: [[1, "arrow-back"], [3, "click"], ["src", "/apps/taxcom/assets/images/arrow-back.png", 2, "cursor", "pointer"], [3, "ngSwitch"], ["ngSwitchCase", "\u041E\u0442\u0447\u0451\u0442\u043D\u043E\u0441\u0442\u044C"], ["ngSwitchCase", "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0434\u043F\u0438\u0441\u044C"], ["fxLayout", "row wrap", "fxLayout.sm", "column", "fxLayoutAlign", "start stretch", "fxLayoutAlign.sm", "start stretch", "fxLayout.xs", "column", "fxLayoutAlign.xs", "start stretch", "fxLayoutGap", "15px", "ng-controller", "ExampleController", 1, "my-12", "container", 2, "margin-top", "90px"], ["class", "card p-6", "fxFlex", "calc(25%-15px)", "fxLayout", "column", "fxLayoutAlign", "start center", 4, "ngFor", "ngForOf"], ["fxFlex", "calc(25%-15px)", "fxLayout", "column", "fxLayoutAlign", "start center", 1, "card", "p-6"], [1, "headline", "my-6", 2, "margin-top", "0"], ["class", "description", "style", "color: blue; text-decoration: underline; cursor: pointer;", 3, "click", 4, "ngIf"], ["fxLayoutAlign", "end center", "fxLayout", "column", 2, "width", "100%", "height", "100%"], [2, "border-top", "2px dashed rgb(128, 128, 128)", "width", "90%", "height", "1px", "margin-top", "1.5rem"], [1, "price", "display-2", "font-bold", "my-6"], [1, "text-secondary", "headline", "align-top"], ["title", "\u041A\u043E\u043D\u0435\u0447\u043D\u0430\u044F \u0446\u0435\u043D\u0430 \u0431\u0443\u0434\u0435\u0442 \u0432\u044B\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u043D\u0430 \u0432 \u0447\u0435\u043A\u0435", 1, "help", "text-secondary", "headline", "align-top"], ["color", "primary", "mat-raised-button", "", "type", "button", 1, "rounded-half", "max-w-full", "w-200", 3, "click"], [1, "description", 2, "color", "blue", "text-decoration", "underline", "cursor", "pointer", 3, "click"], [1, "description"], [1, "my-3", 2, "border-top", "2px dashed rgb(128, 128, 128)", "width", "90%", "height", "1px"], [1, "font-bold"], [1, "price", "display-2", "font-bold"], [1, "my-2"]],
         template: function ProductsComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);

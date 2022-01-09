@@ -4,11 +4,10 @@ import { ProductsComponent } from './products.component';
 import { ProductsRoutingModule } from './products-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
-import { ChoiseAccountingButtonsComponent } from '../choise-accounting-buttons/choise-accounting-buttons.component';
-
+import { FiltersComponent } from '../filters/filters.component';
 
 @NgModule({
-  declarations: [ProductsComponent, ChoiseAccountingButtonsComponent],
+  declarations: [ProductsComponent, FiltersComponent],
   imports: [
     CommonModule,
     ProductsRoutingModule,

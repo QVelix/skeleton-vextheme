@@ -5,7 +5,7 @@
 </div>
 <div [ngSwitch]="servicesType">
     <ng-template ngSwitchCase="Отчётность">
-        <vex-choise-accounting-buttons [productsList]="productsList"></vex-choise-accounting-buttons>
+        <vex-filters></vex-filters>
         <div class="my-12 container" fxLayout="row wrap" fxLayout.sm="column" 
         fxLayoutAlign="start stretch" fxLayoutAlign.sm="start stretch" fxLayout.xs="column" fxLayoutAlign.xs="start stretch"
         fxLayoutGap="15px" style="margin-top:90px;" ng-controller="ExampleController">
@@ -23,6 +23,7 @@
         </div>
     </ng-template>
     <ng-template ngSwitchCase="Электронная подпись">
+        <vex-filters></vex-filters>
         <div class="my-12 container" fxLayout="row wrap" fxLayout.sm="column" 
         fxLayoutAlign="start stretch" fxLayoutAlign.sm="start stretch" fxLayout.xs="column" fxLayoutAlign.xs="start stretch"
         fxLayoutGap="15px" style="margin-top:90px;" ng-controller="ExampleController">

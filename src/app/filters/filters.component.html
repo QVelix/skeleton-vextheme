@@ -1,1 +1,10 @@
-<p>filters works!</p>
+<div [ngSwitch]="serviceType">
+    <ng-template ngSwitchCase="Отчётность">
+        
+    </ng-template>
+    <ng-template ngSwitchCase="Электронная подпись">
+        <ul *ngFor="let filter of typeElSignatures">
+            <li (click)="selectType(filter)">{{filter}}</li>
+        </ul>
+    </ng-template>
+</div>

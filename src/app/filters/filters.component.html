@@ -4,7 +4,7 @@
             <div (click)="log(typeAccounting)" *ngFor="let buttonsL1 of typeAccounting.L1 | keyvalue">
                 <div class={{buttonsL1.key}}>{{buttonsL1.key}}
                     <div *ngFor="let buttonsL2 of buttonsL1.value.L2 | keyvalue">
-                        <h4 class="{{buttonsL2.key}}">{{buttonsL2.key}}</h4>
+                        <h4 class="{{buttonsL2.key}}" (click)="filterLoadEv(buttonsL2.key, buttonsL1.key)">{{buttonsL2.key}}</h4>
                         <div *ngFor="let buttonsL3 of buttonsL2.value.L3 | keyvalue">
                             <h3 class="{{buttonsL3.key}}">{{buttonsL3.key}}</h3>
                         </div>

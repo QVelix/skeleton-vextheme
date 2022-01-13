@@ -9,6 +9,9 @@ export class ClassesGetterService {
   GetClasses(){
     return this.http.get<Classes>('./assets/links.json');
   }
+  // makeResponse(){
+  //   this.http.post();
+  // }
 
   constructor(private http:HttpClient) { }
 }
